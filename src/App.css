@@ -1,38 +1,521 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Satify:wght@400;700&family=Lobster&family=Satisfy&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.bg-container{
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  height: 400vh;
+}
+
+.header-container{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100%;
+  height: 8vh;
+
 }
 
-.App-link {
-  color: #61dafb;
+.hr-line{
+  border:1px solid #F2F2F2 ;
+  width:100%;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hr-line-two{
+  border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+width: 10%;
 }
+
+.header-heading{
+  font-family:"Satisfy" ;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 30px;
+  margin-left: 15px;
+
+}
+
+.heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 20px;
+color: #2B2B2B;
+letter-spacing: 5px;
+margin-top: 40px;
+}
+
+.varieties-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card-container-one{
+  background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676366750/Bitmap_ndpb3n.png");
+  background-size:cover;
+  border-radius: 25px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 20px;
+  width: 44%;
+}
+
+.pizza-card{
+  background-color: rgb(86, 75, 142,0.8);
+  border-bottom-left-radius:25px ;
+  border-bottom-right-radius:25px ;
+  padding-top: 30px;
+  height: 30vh;
+  padding-left:40px;
+  padding-right: 40px;
+}
+
+.pizza-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 40px;
+color: #FFFFFF;
+}
+
+.pizza-para{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+color: #FFFFFF;
+}
+
+.pizza-btn{
+  background-color: transparent;
+  box-sizing: border-box;
+  border: 1px solid #FFFFFF;
+  color:#ffffff;
+  padding: 15px;
+  width: 180px;
+  border-radius: 30px;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.pizza-card-line{
+  border: 2px solid #ffffff;
+  border-top:0px ;
+  border-left:0px ;
+  border-right:0px ;
+}
+
+.card-line{
+  border: 2px solid #616161;
+  border-top:0px ;
+  border-left:0px ;
+  border-right:0px ;
+}
+
+.pizza-bottom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+.rated-text{
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.icon{
+  font-size: 23px;
+  margin-top: 5px;
+margin-right: 15px;
+color: #ffffff;
+
+}
+
+.rating-container{
+  display: flex;
+  align-items: center;
+}
+
+.card-container-two{
+  height: 100vh;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-container-three{
+  height: 100vh;
+  width: 25%;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.fries-container{
+background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676366749/Bitmap_1_yoywk8.png");
+background-size: cover;
+height: 48vh;
+width: 100%;
+display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 25px;
+}
+
+.fries-card{
+  background-color:rgb(236, 232, 229,0.8) ;
+  padding: 25px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  border-bottom-left-radius:25px ;
+  border-bottom-right-radius:25px ;
+  height: 21vh;
+}
+
+.fries-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 23px;
+color: #2B2B2B;
+}
+
+.fries-para{
+  font-family: 'Poppins';
+font-style: normal;
+font-size: 16px;
+line-height: 1.6;
+color: #2B2B2B;
+}
+
+.card-bottom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.card-btn{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 27%;
+}
+
+.card-icon{
+  font-size: 23px;
+  margin-top: 25px;
+margin-right: 18px;
+color: #000000;
+}
+
+.card-text{
+  color: #2B2B2B;
+font-weight: 700;
+}
+
+.macaroon-container{
+  background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676366716/Bitmap_3_szehvs.png");
+  background-size: cover;
+  height: 48vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 25px;
+  margin-top: 20px;
+  }
+
+  .macaroon-card{
+    background-color:  rgb(18, 10, 10, 0.8);
+    padding: 25px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    border-bottom-left-radius:25px ;
+    border-bottom-right-radius:25px ;
+    height: 21vh;
+  }
+
+  .macaroon-heading{
+    font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 23px;
+  color: #ffffff;
+  }
+
+  .macaroon-para{
+    font-family: 'Poppins';
+  font-style: normal;
+  font-size: 16px;
+  color: #ffffff;
+  }
+
+  .macaroon-icon{
+    font-size: 23px;
+    margin-top: 25px;
+    margin-right: 15px;
+    color: #ffffff;
+  }
+  
+  .macaroon-text{
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+.paneer-container{
+  background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676366750/Bitmap_2_xwgyxx.png");
+  background-size: cover;
+  height: 48vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 25px;
+    }
+
+.doughnut-container{
+  background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676366716/Bitmap_4_uz9mnt.png");
+  background-size: cover;
+  height: 48vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 25px;
+      }
+  
+.cuisine-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.cuisine-card{
+  width: 30%;
+  height: 50%;
+  margin-left: 30px;
+}
+
+.cuisine-heading{
+  font-family:'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 32px;
+  color: #2B2B2B;;
+}
+
+.cuisine-para{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+color: #2B2B2B;
+}
+
+.top-chef-container{
+  background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676366750/Mask_Group_znku5p.png");
+  background-size: cover;
+  height: 60vh;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.chef-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.chef-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chef-full-card{
+  background-color: #ffffff;
+  height: 30vh;
+  width: 25%;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chef-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 6px;
+text-align: center;
+color: #FFFFFF;
+margin-top: 25px;
+}
+
+.chef-para{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+text-align: center;
+color: #FFFFFF;
+}
+
+.chef-card-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+text-align: center;
+color: #2B2B2B;
+margin-bottom: 0px;
+}
+
+.chef-card-para{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+text-align: center;
+color: #2B2B2B;
+}
+
+.food-guide-container{
+  background-image: url("https://res.cloudinary.com/dpjowvn70/image/upload/v1676388497/4th_Food_Banner_3_ui2p9e.png");
+  background-size: cover;
+  height:100vh;
+  width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.food-guide-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 20px;
+color: #2B2B2B;
+letter-spacing: 5px;
+}
+
+.hr-line-three{
+  border: 1px solid #342679;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+width: 10%;
+}
+
+.food-guide-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 93%;
+  margin-top: 100px;
+}
+
+.food-guide-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+}
+
+.food-guide-img{
+  width: 28%;
+}
+
+.food-guide-item-heading{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+text-align: center;
+color: #2B2B2B;
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+.food-guide-para{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+text-align: center;
+color: #2B2B2B;
+}
+
+.icon-container{
+  background-color: #ffffff;
+  border:1px solid #D9D9D9;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 55vh;
+}
+.footer-icon-items{
+  display: flex;
+
+}
+
+.footer-icon{
+  font-size: 35px;
+}
+
+
+
+
